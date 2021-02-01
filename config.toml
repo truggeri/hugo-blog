@@ -1,0 +1,12 @@
+baseURL = "https://blog.truggeri.com/"
+languageCode = "en-us"
+title = "TRuggeri Blog"
+
+[params]
+  defaultTheme = "dark"
+
+[[menu.main]]
+  identifier = "tags"
+  name = "tags"
+  url = "/tags/"
+  weight = 20
