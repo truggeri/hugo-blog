@@ -5,16 +5,10 @@ body {
   font-family: "Ubuntu", sans-serif !important;
 }
 
-section.content {
-  background: rgba(23, 28, 32, .8);
-  border-radius: 20px;
+main.main {
+  background: rgba(23, 28, 32, 0.6);
+  border-radius: 16px;
   color: rgb(169, 169, 169);
-  padding: 20px;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  min-height: 150vh;
-  z-index: 100;
 }
 
 .footer {
