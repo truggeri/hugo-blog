@@ -1,5 +1,6 @@
 baseURL = "https://blog.truggeri.com/"
 languageCode = "en-us"
+theme = "PaperMod"
 title = "TRuggeri Blog"
 
 [params]
@@ -10,3 +11,6 @@ title = "TRuggeri Blog"
   name = "tags"
   url = "/tags/"
   weight = 20
+
+[markup.goldmark.renderer]
+  unsafe = true
