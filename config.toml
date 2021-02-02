@@ -5,6 +5,7 @@ title = "TRuggeri Blog"
 
 [params]
   defaultTheme = "dark"
+  disableThemeToggle = true
 
 [[menu.main]]
   identifier = "tags"

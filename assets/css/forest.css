@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700|Ubuntu:400,400i,700&display=swap");
+
+body {
+  background: linear-gradient(0deg, rgb(63, 53, 19) 0%, rgba(0,0,0,1) 50%) !important;
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+section.content {
+  background: rgba(23, 28, 32, .8);
+  border-radius: 20px;
+  color: rgb(169, 169, 169);
+  padding: 20px;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  min-height: 150vh;
+  z-index: 100;
+}
+
+.footer {
+  z-index: 10;
+  width: 100%;
+  max-width: unset;
+  background-color: transparent;
+  min-height: 150px;
+  /* see https://svgsilh.com/image/1512798.html */
+  background-image: url("/images/forest1.svg");
+}

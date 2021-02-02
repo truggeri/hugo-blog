@@ -1,0 +1,79 @@
+#stars-background {
+  z-index: -100;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: 3vw 0vh #ffffff,
+              50vw 50vh #f5be8e,
+              73vw 42vh #ffffff,
+              90vw 66vh #ffffff,
+              97vw 90vh #ce7575,
+              37vw 82vh #ffffff,
+              59vw 87vh #dab391,
+              12vw 91vh #ffffff,
+              27vw 15vh #f5be8e
+              ;
+  /* animation: starFallAbsolute calc(((1.1 - var(--scroll)) * 10s) + 1s) linear infinite,
+             starRollLeft calc(((1.1 - var(--scroll)) * 10s) + 1s) linear infinite; */
+  animation: starFallAbsolute 10s linear infinite,
+             starRollLeft 10s linear infinite;
+}
+
+#stars-midground {
+  z-index: -100;
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: 123px 130px #ffffff, 222px 10px #f5be8e, 600px 290px #ffffff, 700px 400px #ce7575;
+  animation: starFallAbsolute 20s linear infinite,
+             starRollRight 20s linear infinite;
+}
+
+#stars-forground { 
+  z-index: -100;
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: 123px 130px #ffffff,
+              42vw 74vh #ffffff,
+              62vw 86vh #ffffff,
+              90vw 72vh #ce7575,
+              82vw 33vh #ffffff,
+              62vw 47vh #dab391,
+              700px 400px #ffffff;
+  animation: starFallAbsolute 10s linear infinite;
+}
+
+.stars-offset-up {
+  transform: translateY(-100vh);
+}
+
+@keyframes starFallAbsolute {
+  from {
+    top: 0vh;
+  }
+  to {
+    top: 120vh;
+  }
+}
+
+@keyframes starRollLeft {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+
+@keyframes starRollRight {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotate(-15deg);
+  }
+}
