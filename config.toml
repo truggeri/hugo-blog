@@ -12,6 +12,3 @@ title = "TRuggeri Blog"
   name = "tags"
   url = "/tags/"
   weight = 20
-
-[markup.goldmark.renderer]
-  unsafe = true

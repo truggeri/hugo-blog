@@ -5,7 +5,6 @@ date:   2020-12-19 12:44:00 -0500
 author: Thomas Ruggeri
 categories: [post, update]
 tags: [front-end, jekyll]
-unsafe: true
 ---
 
 At the top of posts on this site, you can see the tags for each post. This was a somewhat "out-of-the-box" feature of the Jekyll theme that I chose to use and I always liked the look of them,
@@ -14,10 +13,8 @@ would be a link to a page that included the posts that also used this tag.
 
 Simple, right?
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/Zdg7kl9bnyqXrPH2jq/giphy.gif"
-       loading="lazy" alt="Image of boop">
-</div>
+{{< figure src="https://media.giphy.com/media/Zdg7kl9bnyqXrPH2jq/giphy.gif"
+width=480 height=480 class="center" alt="Image of boop" >}}
 
 ## New Layout
 
@@ -34,16 +31,12 @@ This will create a file structure of `/tags/` with every markdown file that's in
 directory of my source. Great, but I don't have any files in there yet. Let's manually create one,
 say `front-end.md`, and come back to this later. We now will have a single page at `/tags/front-end`.
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/3oKIPtyZ7IGAWlhnxu/giphy.gif"
-       loading="lazy" alt="Image of wink">
-</div>
+{{< figure src="https://media.giphy.com/media/3oKIPtyZ7IGAWlhnxu/giphy.gif"
+width=500 height=500 class="center" alt="Image of wink" >}}
 
 ## Content
 
 For content on these tag pages, we can assume we're given a `tag-name` in the front-matter. This allows us to create a header with the given tag name.
-
-
 
 ```html
 <h1>{{ page.tag-name }}</h1>
@@ -51,12 +44,8 @@ For content on these tag pages, we can assume we're given a `tag-name` in the fr
 The following posts mention {{ page.tag-name }}
 ```
 
-
-
 Let's add a list of all the pages that match this tag. For this we will have to use the [variables
 provided to us from Jekyll](https://jekyllrb.com/docs/variables/).
-
-
 
 ```html
 <ul class="tags-list">
@@ -67,8 +56,6 @@ provided to us from Jekyll](https://jekyllrb.com/docs/variables/).
 {% endfor %}
 </ul>
 ```
-
-
 
 ### Performance (aside)
 
@@ -87,10 +74,8 @@ site generator (duh). This means that the concept of "looking up" the tags is pu
 compile/generation time. What this really means is that we have to work with the [variables that
 Jekyll gives us](https://jekyllrb.com/docs/variables/).
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/xUPGcwqhFVcmQaDwJO/giphy.gif"
-       loading="lazy" alt="Image of looking">
-</div>
+{{< figure src="https://media.giphy.com/media/xUPGcwqhFVcmQaDwJO/giphy.gif"
+width=500 height=406 class="center" alt="Image of looking" >}}
 
 Since they don't provide a pages per tag variable, we'll have to iterate over the pages and select
 only those that use the given tag. If we have `n` pages, and `t` tags, that would be `O(n * t)`
@@ -118,10 +103,8 @@ This would be my "typical" answer to an interview question on the manner. A
 type of work because it allows us to create `O(1)` lookups by tag and remove unnecessary extra
 traversals through data.
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/3og0IHAQXjVi34wfZu/giphy.gif"
-       loading="lazy" alt="Image of proud graduate">
-</div>
+{{< figure src="https://media.giphy.com/media/3og0IHAQXjVi34wfZu/giphy.gif"
+width=480 height=480 class="center" alt="Image of proud graduate" >}}
 
 ## Page per Tag (Plugins)
 
@@ -129,10 +112,8 @@ Back on topic, we now have a layout that will display the pages that contain a g
 would have to manually generate a markdown file for each tag we use. If we forget one, the system
 breaks.
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/fQJSYE2Qy6OtXfwEuf/giphy.gif"
-       loading="lazy" alt="Image of eww">
-</div>
+{{< figure src="https://media.giphy.com/media/fQJSYE2Qy6OtXfwEuf/giphy.gif"
+width=480 height=480 class="center" alt="Image of eww" >}}
 
 That doesn't jive with the easy-breezy automate everything lifestyle I'm going for. A quick Google
 to see what others had come up with revealed a
@@ -145,10 +126,8 @@ directory and poof, we're done...
 
 Wait, why are they not running?
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/2uIhU2qPuiHJda5BjV/giphy.gif"
-       loading="lazy" alt="Image of confused, looking">
-</div>
+{{< figure src="https://media.giphy.com/media/2uIhU2qPuiHJda5BjV/giphy.gif"
+width=480 height=480 class="center" alt="Image of confused, looking" >}}
 
 Turns out that [GitHub Pages](https://pages.github.com/) does not support plugins. This makes total
 sense as if they did, anyone could run arbitrary Ruby code on their deploy servers. The
@@ -156,10 +135,8 @@ sense as if they did, anyone could run arbitrary Ruby code on their deploy serve
 Unfortunatly, it doesn't _SAY_ that plugins aren't run, so it took me a few minutes to figure that
 one out.
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/jaPkRECl8T8cuVjuw7/giphy.gif"
-       loading="lazy" alt="Image of going insane">
-</div>
+{{< figure src="https://media.giphy.com/media/jaPkRECl8T8cuVjuw7/giphy.gif"
+width=480 height=480 class="center" alt="Image of going insane" >}}
 
 ## Wrapping Up
 
@@ -171,10 +148,8 @@ this seems like a decent trade off.
 With that, we now have pages for each unique tag used in the posts that show every article using that
 tag. A little quick update to the post layout and css and we're good to go.
 
-<div style="text-align: center;">
-  <img src="https://media.giphy.com/media/SYcfbJpRiwCvcXWACx/giphy.gif"
-       loading="lazy" alt="Image of success">
-</div>
+{{< figure src="https://media.giphy.com/media/SYcfbJpRiwCvcXWACx/giphy.gif"
+width=480 height=480 class="center" alt="Image of success" >}}
 
 ## What I Learned
 
