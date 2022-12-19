@@ -132,7 +132,7 @@ width=480 height=480 class="center" alt="Image of confused, looking" >}}
 Turns out that [GitHub Pages](https://pages.github.com/) does not support plugins. This makes total
 sense as if they did, anyone could run arbitrary Ruby code on their deploy servers. The
 [gem](https://github.com/github/pages-gem) that I use therefore does not run plugins locally as well.
-Unfortunatly, it doesn't _SAY_ that plugins aren't run, so it took me a few minutes to figure that
+Unfortunately, it doesn't _SAY_ that plugins aren't run, so it took me a few minutes to figure that
 one out.
 
 {{< figure src="https://media.giphy.com/media/jaPkRECl8T8cuVjuw7/giphy.gif"

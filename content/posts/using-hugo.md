@@ -24,7 +24,7 @@ I followed the [quick start page](https://gohugo.io/getting-started/quick-start/
 * Tag pages under the "taxonomy" feature
 * User selectable light or dark mode
 
-That's a pretty sweet set of features. While I knew that build times were fast, I was suprised
+That's a pretty sweet set of features. While I knew that build times were fast, I was surprised
 how much I like the sub-second build times. It made development and deployment feel like you're
 just editing the live HTML.
 
@@ -39,7 +39,7 @@ Let's discuss a few of the facets of Hugo that I've experienced.
 
 So far I hadn't touched a line of Go. Looking more into the
 [templates](https://gohugo.io/templates/introduction/), I see a lot of Go-like syntax
-in the templating engine which is kind of inconsiquential - it's not like you're really writing Go.
+in the templating engine which is kind of inconsequential - it's not like you're really writing Go.
 This is very similar to my experience with [Jekyll](https://jekyllrb.com/) which I was originally
 drawn to because it's written in Ruby. While you may end up under the hood writing a plugin or
 something in the base language, your day-to-day usage floats above most language constructs and
@@ -69,8 +69,8 @@ about the deployment process.
 
 ## What I Learned
 
-I learned about lots of the features of Hugo including taxonomies, themes and some configuraiton.
-I also leared a bit about Cloudinary while I worked to add web optimized images, but that's a
+I learned about lots of the features of Hugo including taxonomies, themes and some configuration.
+I also learned a bit about Cloudinary while I worked to add web optimized images, but that's a
 story for another time.
 
 ## What Comes Next

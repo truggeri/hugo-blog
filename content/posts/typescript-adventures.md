@@ -19,7 +19,7 @@ to integrate Typescript, even though it's not necessary.
 
 ## Installation
 
-Let's just start with the nuts and boltsof adding it. In your `webpack.config.js`:
+Let's just start with the nuts and bolts of adding it. In your `webpack.config.js`:
 
 ```javascript
 module.exports = {
@@ -56,7 +56,7 @@ code to Typescript.
 Typescript is useful because it helps you put some bumpers around Javascript. Adding types greatly
 reduces the testing space and can help provide some contracts around our component edges. I
 particularly like this feature because it ensures I don't send a number into a function that needs
-and array of objects. Easy checks that nothing disasterous is going to happen.
+and array of objects. Easy checks that nothing disastrous is going to happen.
 
 There is also some nice tooling that integrates with a language server which makes working with
 your code a bit easier. Between inference and libraries that come with Typescript support,
@@ -110,7 +110,7 @@ I think of Go and Javascript.
 
 I learned a few things about the
 [Typescript language](https://www.typescriptlang.org/docs/handbook/intro.html), such as `enum`,
-`readonly` and [differences in closures between annonymous functions and arrow
+`readonly` and [differences in closures between anonymous functions and arrow
 functions](https://www.typescriptlang.org/docs/handbook/functions.html#this-and-arrow-functions).
 
 ## What Comes Next

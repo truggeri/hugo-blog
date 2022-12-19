@@ -15,9 +15,11 @@ For now I want to introduce my first Vue component (on this blog). I plan on exp
 
 2. Allow for more backend experimentation. Hear me out on this one. If I can put Vue components on the blog, then I can point them to new, small, backend projects. This allows me to try things out in smaller, bite-sized, chunks.
 
-My goals is to show off more work and make things more operational. I have a habbit of starting a big project with grand plans only to see it religated to github archives.
+My goals is to show off more work and make things more operational. I have a habit of starting a big project with grand plans only to see it relighted to github archives.
 
 And with that, hello world.
+
+> Note that the below script is no longer enabled
 
 <div id="app">
   <hello-world></hello-world>
@@ -25,7 +27,7 @@ And with that, hello world.
 
 ## How to add VueJS
 
-This is a Jekyll blog, which is a statically genearted site. The backend of [Jekyll](https://jekyllrb.com/) is Ruby based. Vue components need to be built seperately from the static site. This is done through webpack.
+This is a Jekyll blog, which is a statically generated site. The backend of [Jekyll](https://jekyllrb.com/) is Ruby based. Vue components need to be built separately from the static site. This is done through webpack.
 
 I started the process by reading this helpful [blog post](https://hackwild.com/article/jekyll-ssg-with-vue-single-file-components/). It walked me through the setup of a webpack config, something that's notoriously difficult, and the node packages that are required. The end result is that there are Vue components in a folder and a `package.json` and `webpack.config.js` in the root directory. One can then run,
 
@@ -45,10 +47,8 @@ Hopefully I can bootstrap from here and come up with more uses for Vue in this b
 
 ## What I learned
 
-I leared a lot about the structure of [`webpack.config.js`](https://webpack.js.org/concepts/configuration/). I also leanred a little bit about [component registration](https://vuejs.org/v2/guide/components-registration.html) in Vue.
+I learned a lot about the structure of [`webpack.config.js`](https://webpack.js.org/concepts/configuration/). I also learned a little bit about [component registration](https://vuejs.org/v2/guide/components-registration.html) in Vue.
 
 ## What comes next
 
 Add more components that do something with an API. Hopefully I can write a small app to host somewhere that can be interacted with via a component.
-
-{% include vue-script.html %}

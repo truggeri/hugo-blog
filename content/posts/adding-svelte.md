@@ -9,9 +9,11 @@ tags: [front-end, svelte, javascript]
 
 Wait, wasn't the last post about Vue? How have we switched to Svelte already?!? Let me explain.
 
-[Svelte](https://svelte.dev/) is a fantastic front-end component library developed originally by [Rich Harris](https://github.com/Rich-Harris) of the New York Times. It doesn't have the widespread popularity that Vue, React and Angular have, but it is growing in notirity, especially since the release of version 3 in 2019. In my limited world view (of the front-end), it stands out because it has always focused on [pre-compliation](https://svelte.dev/blog/frameworks-without-the-framework) to provide a ... svelte ... javascript file rather than including a "run-time" library of javascript code that [manipulates the virtual DOM](https://svelte.dev/blog/virtual-dom-is-pure-overhead). This is a feature that has since been developed into many frameworks/libraries, but it is what makes Svelte unique.
+[Svelte](https://svelte.dev/) is a fantastic front-end component library developed originally by [Rich Harris](https://github.com/Rich-Harris) of the New York Times. It doesn't have the widespread popularity that Vue, React and Angular have, but it is growing in notoriety, especially since the release of version 3 in 2019. In my limited world view (of the front-end), it stands out because it has always focused on [pre-compilation](https://svelte.dev/blog/frameworks-without-the-framework) to provide a ... svelte ... javascript file rather than including a "run-time" library of javascript code that [manipulates the virtual DOM](https://svelte.dev/blog/virtual-dom-is-pure-overhead). This is a feature that has since been developed into many frameworks/libraries, but it is what makes Svelte unique.
 
 Coming back to this blog, why would I work to include another component library? Simply put, this isn't a webapp, it's a playground for me to explore and try things. This means that sometimes I may want to play with Vue, but other times, like today, I want to play with Svelte. And with that, let's re-create the hello world component.
+
+> Note that the below script is no longer enabled
 
 <div id="svelte_hello_world"></div>
 
@@ -75,5 +77,3 @@ I had to re-learn the [syntax for Svelte components](https://svelte.dev/docs#Tem
 ## What comes next
 
 I have a few small ideas to play with some css tricks to make some interactive components for the front page.
-
-{% include svelte-script.html %}

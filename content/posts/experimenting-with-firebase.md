@@ -7,7 +7,7 @@ categories: ["interesting"]
 tags: ["front-end", "nosql", "cheap-hosting", "javascript"]
 ---
 
-As I've hinted in [a previous posts]({% post_url 2019-12-19-first-post %}), 
+As I've hinted in [a previous posts]({{< ref "first-post" >}}), 
 I've been experimenting with [Firebase](https://firebase.google.com). 
 While I'm no expert, I have learned a few things that I'd like to share and document.
 
